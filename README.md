@@ -324,6 +324,47 @@ Contributions welcome! Areas of interest:
 
 ---
 
+## AI Usage Disclosure
+
+I used AI tools extensively throughout this project, as permitted by the assignment. Here's an honest breakdown:
+
+**AI-generated (with my review and modification):**
+- Backend orchestrator code (FastAPI server, WebSocket handler, pipeline, runtime adapters)
+- Frontend components (Next.js pages, AudioWorklet setup, Latency HUD, push-to-talk)
+- Benchmark harness (run.py, charts.py, generate_report.py)
+- Serve scripts for GPU services
+- Test suite and documentation structure
+
+**Written entirely by hand:**
+- README opening paragraph and this disclosure
+- BENCHMARK_REPORT.md Insights section (written from real numbers I observed on the L4)
+- All five bug write-ups in docs/05-runbook.md Issues Encountered (these were real problems I hit and debugged)
+- Loom video walkthrough
+
+**Where I overrode AI suggestions:**
+- AI initially generated the serve scripts with `--gpu-memory-utilization 0.65` and `--max-model-len 8192`. These OOMed on the L4 when Whisper and Kokoro were already loaded. I tuned the values to `0.80`, `2048`, and `--enforce-eager` through trial and error on the actual hardware.
+- AI set up Kokoro TTS to run on GPU by default. It crashed with a cuDNN version mismatch caused by conflicting PyTorch installations from vLLM and SGLang. I debugged this by disabling cuDNN entirely (`torch.backends.cudnn.enabled = False`) and fixing the audio tensor conversion from Tensor to numpy.
+- AI-generated code for Whisper assumed CUDA 12 libraries would be available. After SGLang's install overwrote them with CUDA 13, I found a working libcublas.so.12 in Ollama's install directory and patched the library path.
+- AI initially built the frontend with React Router instead of Next.js App Router, and used ScriptProcessorNode instead of AudioWorklet. I caught both deviations from the spec and had them corrected before proceeding.
+
+**My approach to AI-generated code:** I reviewed every file, understood the architectural choices (documented in docs/06-decisions.md), and can explain any function in the codebase. The real engineering was in making everything coexist on a single 24 GB GPU, which required hands-on debugging that no AI could do remotely.
+
+---
+
+## What I Would Change With 4 More Weeks
+
+- **Containerize each service.** The #1 operational pain point was dependency conflicts between vLLM, SGLang, and Kokoro fighting over PyTorch and CUDA library versions. Each service should run in its own Docker container with pinned dependencies. This would eliminate the cuDNN mismatch, the libcublas.so.12 issue, and the floating point exception — all three bugs I hit were dependency collisions.
+
+- **Add FP8 quantization to vLLM/SGLang benchmarks.** The Ollama comparison is apples-to-oranges because it uses Q4_K_M while vLLM and SGLang run BF16. Running vLLM with FP8 via `--quantization fp8` would give a fair quantization-vs-quantization comparison and likely close the per-token speed gap.
+
+- **Implement voice-pipeline benchmark mode.** The current benchmarks measure LLM inference only. A full pipeline benchmark measuring STT-to-audio-out at different concurrencies would capture the real user experience, including the TTFB-audio metric end-to-end.
+
+- **Add multi-turn conversation support.** The current pipeline is single-turn — each push-to-talk is independent. Adding conversation history with KV cache reuse across turns would significantly reduce TTFT for follow-up questions and is closer to a real product experience.
+
+- **Ship a Prometheus + Grafana stack.** The ndjson metrics logging works for development but doesn't scale. A proper observability layer with real-time dashboards, alerting on TTFT regressions, and per-runtime performance tracking would make this production-grade.
+
+- **Deploy on Kubernetes with GPU scheduling.** Replace the manual tmux-based process management with proper K8s pods, GPU resource requests, and autoscaling. This is what Jarvis Labs actually does for customers, so demonstrating it would be directly relevant.
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
