@@ -1,0 +1,185 @@
+{"prompt": "What is the capital of France?", "category": "factual"}
+{"prompt": "Explain quantum computing in simple terms.", "category": "explanation"}
+{"prompt": "Write a haiku about technology.", "category": "creative"}
+{"prompt": "How do I make chocolate chip cookies?", "category": "instructional"}
+{"prompt": "What are the benefits of exercise?", "category": "informational"}
+{"prompt": "Tell me a short joke.", "category": "entertainment"}
+{"prompt": "Summarize the theory of relativity.", "category": "scientific"}
+{"prompt": "What programming languages should I learn first?", "category": "advice"}
+{"prompt": "Describe the water cycle.", "category": "educational"}
+{"prompt": "What is the meaning of life?", "category": "philosophical"}
+{"prompt": "How does photosynthesis work?", "category": "scientific"}
+{"prompt": "What causes earthquakes?", "category": "scientific"}
+{"prompt": "Explain the concept of blockchain.", "category": "technical"}
+{"prompt": "What is machine learning?", "category": "technical"}
+{"prompt": "How do I start meditating?", "category": "instructional"}
+{"prompt": "What are the symptoms of flu?", "category": "medical"}
+{"prompt": "Describe the solar system.", "category": "scientific"}
+{"prompt": "What is democracy?", "category": "political"}
+{"prompt": "How do I tie a tie?", "category": "instructional"}
+{"prompt": "What is the speed of light?", "category": "scientific"}
+{"prompt": "Explain supply and demand.", "category": "economic"}
+{"prompt": "What is artificial intelligence?", "category": "technical"}
+{"prompt": "How do airplanes fly?", "category": "scientific"}
+{"prompt": "What is the greenhouse effect?", "category": "environmental"}
+{"prompt": "Describe the human brain.", "category": "biological"}
+{"prompt": "What causes climate change?", "category": "environmental"}
+{"prompt": "How do I write a resume?", "category": "career"}
+{"prompt": "What is inflation?", "category": "economic"}
+{"prompt": "Explain DNA replication.", "category": "biological"}
+{"prompt": "What are black holes?", "category": "astronomical"}
+{"prompt": "How does the internet work?", "category": "technical"}
+{"prompt": "What is cryptocurrency?", "category": "financial"}
+{"prompt": "Describe the process of evolution.", "category": "biological"}
+{"prompt": "What causes rainbows?", "category": "scientific"}
+{"prompt": "How do I learn a new language?", "category": "educational"}
+{"prompt": "What is the Big Bang theory?", "category": "astronomical"}
+{"prompt": "Explain how vaccines work.", "category": "medical"}
+{"prompt": "What is quantum entanglement?", "category": "physics"}
+{"prompt": "How do I start a business?", "category": "entrepreneurial"}
+{"prompt": "What causes aurora borealis?", "category": "scientific"}
+{"prompt": "Describe the water cycle briefly.", "category": "environmental"}
+{"prompt": "What is neural plasticity?", "category": "neuroscience"}
+{"prompt": "How does GPS work?", "category": "technical"}
+{"prompt": "What is photosynthesis?", "category": "biological"}
+{"prompt": "Explain cloud computing.", "category": "technical"}
+{"prompt": "What causes tides?", "category": "astronomical"}
+{"prompt": "How do I improve my memory?", "category": "cognitive"}
+{"prompt": "What is dark matter?", "category": "physics"}
+{"prompt": "Describe the nitrogen cycle.", "category": "environmental"}
+{"prompt": "What is gene therapy?", "category": "medical"}
+{"prompt": "How do batteries work?", "category": "technical"}
+{"prompt": "What causes volcanoes?", "category": "geological"}
+{"prompt": "Explain the Doppler effect.", "category": "physics"}
+{"prompt": "What is CRISPR technology?", "category": "biotechnology"}
+{"prompt": "How do I reduce stress?", "category": "wellness"}
+{"prompt": "What are exoplanets?", "category": "astronomical"}
+{"prompt": "Describe the carbon cycle.", "category": "environmental"}
+{"prompt": "What is quantum tunneling?", "category": "physics"}
+{"prompt": "How does 5G work?", "category": "technical"}
+{"prompt": "What causes migraines?", "category": "medical"}
+{"prompt": "Explain the butterfly effect.", "category": "chaos_theory"}
+{"prompt": "What is nuclear fusion?", "category": "physics"}
+{"prompt": "How do I build confidence?", "category": "personal_development"}
+{"prompt": "What are stem cells?", "category": "biological"}
+{"prompt": "Describe plate tectonics.", "category": "geological"}
+{"prompt": "What is dark energy?", "category": "physics"}
+{"prompt": "How does radar work?", "category": "technical"}
+{"prompt": "What causes allergies?", "category": "medical"}
+{"prompt": "Explain Moore's Law.", "category": "technical"}
+{"prompt": "What is antimatter?", "category": "physics"}
+{"prompt": "How do I manage time effectively?", "category": "productivity"}
+{"prompt": "What are nebulae?", "category": "astronomical"}
+{"prompt": "Describe the rock cycle.", "category": "geological"}
+{"prompt": "What is supersymmetry?", "category": "physics"}
+{"prompt": "How does MRI work?", "category": "medical"}
+{"prompt": "What causes thunder?", "category": "meteorological"}
+{"prompt": "Explain neural networks.", "category": "ai"}
+{"prompt": "What is the ozone layer?", "category": "environmental"}
+{"prompt": "How do I invest wisely?", "category": "financial"}
+{"prompt": "What are pulsars?", "category": "astronomical"}
+{"prompt": "Describe ocean currents.", "category": "oceanographic"}
+{"prompt": "What is string theory?", "category": "physics"}
+{"prompt": "How does encryption work?", "category": "cybersecurity"}
+{"prompt": "What causes acid rain?", "category": "environmental"}
+{"prompt": "Explain deep learning.", "category": "ai"}
+{"prompt": "What is a supernova?", "category": "astronomical"}
+{"prompt": "How do I negotiate salary?", "category": "career"}
+{"prompt": "What are quarks?", "category": "physics"}
+{"prompt": "Describe the immune system.", "category": "biological"}
+{"prompt": "What is entropy?", "category": "thermodynamics"}
+{"prompt": "How does blockchain consensus work?", "category": "technical"}
+{"prompt": "What causes jet lag?", "category": "biological"}
+{"prompt": "Explain reinforcement learning.", "category": "ai"}
+{"prompt": "What is the Higgs boson?", "category": "physics"}
+{"prompt": "How do I network professionally?", "category": "career"}
+{"prompt": "What are gravitational waves?", "category": "physics"}
+{"prompt": "Describe cellular respiration.", "category": "biological"}
+{"prompt": "What is quantum computing potential?", "category": "technical"}
+{"prompt": "How does sonar work?", "category": "technical"}
+{"prompt": "What causes bioluminescence?", "category": "biological"}
+{"prompt": "Explain transfer learning.", "category": "ai"}
+{"prompt": "What is redshift in astronomy?", "category": "astronomical"}
+{"prompt": "How do I set SMART goals?", "category": "productivity"}
+{"prompt": "What are cosmic rays?", "category": "physics"}
+{"prompt": "Describe protein synthesis.", "category": "biological"}
+{"prompt": "What is quantum supremacy?", "category": "technical"}
+{"prompt": "How does gene expression work?", "category": "genetics"}
+{"prompt": "What causes sleep paralysis?", "category": "neuroscience"}
+{"prompt": "Explain generative AI.", "category": "ai"}
+{"prompt": "What is Hawking radiation?", "category": "physics"}
+{"prompt": "How do I practice active listening?", "category": "communication"}
+{"prompt": "What are magnetars?", "category": "astronomical"}
+{"prompt": "Describe mitosis and meiosis.", "category": "biological"}
+{"prompt": "What is quantum annealing?", "category": "technical"}
+{"prompt": "How does CERN work?", "category": "physics"}
+{"prompt": "What causes phantom limb pain?", "category": "medical"}
+{"prompt": "Explain attention mechanisms in AI.", "category": "ai"}
+{"prompt": "What is cosmological inflation?", "category": "astronomical"}
+{"prompt": "How do I develop emotional intelligence?", "category": "personal_development"}
+{"prompt": "What are fast radio bursts?", "category": "astronomical"}
+{"prompt": "Describe enzyme catalysis.", "category": "biochemistry"}
+{"prompt": "What is topological quantum computing?", "category": "technical"}
+{"prompt": "How does gene editing work?", "category": "biotechnology"}
+{"prompt": "What causes synesthesia?", "category": "neuroscience"}
+{"prompt": "Explain transformers in NLP.", "category": "ai"}
+{"prompt": "What is the multiverse theory?", "category": "physics"}
+{"prompt": "How do I give effective feedback?", "category": "management"}
+{"prompt": "What are quasars?", "category": "astronomical"}
+{"prompt": "Describe the endocrine system.", "category": "biological"}
+{"prompt": "What is quantum error correction?", "category": "technical"}
+{"prompt": "How does immunotherapy work?", "category": "medical"}
+{"prompt": "What causes lucid dreaming?", "category": "neuroscience"}
+{"prompt": "Explain diffusion models.", "category": "ai"}
+{"prompt": "What is the cosmic microwave background?", "category": "astronomical"}
+{"prompt": "How do I build resilience?", "category": "personal_development"}
+{"prompt": "What are gamma-ray bursts?", "category": "astronomical"}
+{"prompt": "Describe neurotransmitter function.", "category": "neuroscience"}
+{"prompt": "What is quantum teleportation?", "category": "physics"}
+{"prompt": "How does PCR work?", "category": "biotechnology"}
+{"prompt": "What causes déjà vu?", "category": "neuroscience"}
+{"prompt": "Explain few-shot learning.", "category": "ai"}
+{"prompt": "What is holographic principle?", "category": "physics"}
+{"prompt": "How do I manage conflict?", "category": "interpersonal"}
+{"prompt": "What are Type Ia supernovae?", "category": "astronomical"}
+{"prompt": "Describe epigenetic mechanisms.", "category": "genetics"}
+{"prompt": "What is adiabatic quantum computing?", "category": "technical"}
+{"prompt": "How does CAR T-cell therapy work?", "category": "medical"}
+{"prompt": "What causes phantom smells?", "category": "neuroscience"}
+{"prompt": "Explain meta-learning.", "category": "ai"}
+{"prompt": "What is baryon asymmetry?", "category": "physics"}
+{"prompt": "How do I delegate effectively?", "category": "management"}
+{"prompt": "What are Wolf-Rayet stars?", "category": "astronomical"}
+{"prompt": "Describe alternative splicing.", "category": "genetics"}
+{"prompt": "What is measurement-based quantum computing?", "category": "technical"}
+{"prompt": "How does optogenetics work?", "category": "neuroscience"}
+{"prompt": "What causes musical hallucinations?", "category": "neuroscience"}
+{"prompt": "Explain contrastive learning.", "category": "ai"}
+{"prompt": "What is the flatness problem?", "category": "cosmology"}
+{"prompt": "How do I coach team members?", "category": "leadership"}
+{"prompt": "What are protoplanetary disks?", "category": "astronomical"}
+{"prompt": "Describe RNA interference.", "category": "molecular_biology"}
+{"prompt": "What is quantum advantage?", "category": "technical"}
+{"prompt": "How does nanomedicine work?", "category": "medical"}
+{"prompt": "What causes temporal lobe epilepsy?", "category": "neuroscience"}
+{"prompt": "Explain self-supervised learning.", "category": "ai"}
+{"prompt": "What is cosmic censorship hypothesis?", "category": "physics"}
+{"prompt": "How do I foster innovation?", "category": "leadership"}
+{"prompt": "What are circumstellar habitable zones?", "category": "astrobiology"}
+{"prompt": "Describe chromatin remodeling.", "category": "epigenetics"}
+{"prompt": "What is variational quantum eigensolver?", "category": "quantum_computing"}
+{"prompt": "How does targeted drug delivery work?", "category": "pharmacology"}
+{"prompt": "What causes mirror touch synesthesia?", "category": "neuroscience"}
+{"prompt": "Explain federated learning.", "category": "ai"}
+{"prompt": "What is information paradox?", "category": "physics"}
+{"prompt": "How do I build psychological safety?", "category": "leadership"}
+{"prompt": "What are trojan asteroids?", "category": "astronomical"}
+{"prompt": "Describe long non-coding RNAs.", "category": "genomics"}
+{"prompt": "What is quantum approximate optimization?", "category": "quantum_computing"}
+{"prompt": "How does molecular imaging work?", "category": "medical"}
+{"prompt": "What causes Alice in Wonderland syndrome?", "category": "neuroscience"}
+{"prompt": "Explain curriculum learning.", "category": "ai"}
+{"prompt": "What is holographic duality?", "category": "theoretical_physics"}
+{"prompt": "How do I scale organizational culture?", "category": "leadership"}
+{"prompt": "What are Kuiper belt objects?", "category": "astronomical"}
+{"prompt": "Describe CRISPR base editing.", "category": "gene_editing"}
