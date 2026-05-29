@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light mode tokens per design guidelines */
+    --background: 210 25% 98%;
+    --foreground: 222 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 18% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 18% 12%;
+    --primary: 222 18% 12%;
+    --primary-foreground: 210 25% 98%;
+    --secondary: 210 18% 94%;
+    --secondary-foreground: 222 18% 12%;
+    --muted: 210 18% 94%;
+    --muted-foreground: 215 10% 40%;
+    --accent: 210 18% 92%;
+    --accent-foreground: 222 18% 12%;
+    --border: 214 14% 86%;
+    --input: 214 14% 86%;
+    --ring: 222 18% 20%;
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 210 25% 98%;
+    --chart-1: 210 22% 42%;
+    --chart-2: 160 18% 36%;
+    --chart-3: 35 22% 40%;
+    --chart-4: 260 14% 42%;
+    --chart-5: 0 18% 42%;
+    --radius: 0.5rem;
+
+    /* Custom properties */
+    --surface-1: hsl(var(--background));
+    --surface-2: hsl(var(--card));
+    --surface-3: hsl(var(--secondary));
+    --shadow-elev-1: 0 1px 0 hsl(var(--border) / 0.6), 0 10px 30px rgba(0,0,0,0.35);
+    --shadow-elev-2: 0 1px 0 hsl(var(--border) / 0.7), 0 18px 50px rgba(0,0,0,0.45);
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+    --hud-ring-idle: hsl(215 10% 55%);
+    --hud-ring-listening: hsl(160 18% 52%);
+    --hud-ring-thinking: hsl(35 22% 58%);
+    --hud-ring-speaking: hsl(210 22% 62%);
+  }
+
+  .dark {
+    /* Dark mode tokens - muted graphite palette */
+    --background: 222 18% 7%;
+    --foreground: 210 20% 96%;
+    --card: 222 18% 9%;
+    --card-foreground: 210 20% 96%;
+    --popover: 222 18% 9%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 210 20% 96%;
+    --primary-foreground: 222 18% 9%;
+    --secondary: 222 14% 14%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 222 14% 14%;
+    --muted-foreground: 215 12% 70%;
+    --accent: 215 18% 16%;
+    --accent-foreground: 210 20% 96%;
+    --border: 220 12% 18%;
+    --input: 220 12% 18%;
+    --ring: 210 16% 78%;
+    --destructive: 0 55% 42%;
+    --destructive-foreground: 210 20% 96%;
+    --chart-1: 210 22% 62%;
+    --chart-2: 160 18% 52%;
+    --chart-3: 35 22% 58%;
+    --chart-4: 260 14% 62%;
+    --chart-5: 0 18% 62%;
+
+    /* Custom properties */
+    --surface-1: hsl(var(--background));
+    --surface-2: hsl(var(--card));
+    --surface-3: hsl(var(--secondary));
+    --shadow-elev-1: 0 1px 0 hsl(var(--border) / 0.6), 0 10px 30px rgba(0,0,0,0.35);
+    --shadow-elev-2: 0 1px 0 hsl(var(--border) / 0.7), 0 18px 50px rgba(0,0,0,0.45);
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 18px;
+    --hud-ring-idle: hsl(215 10% 55%);
+    --hud-ring-listening: hsl(160 18% 52%);
+    --hud-ring-thinking: hsl(35 22% 58%);
+    --hud-ring-speaking: hsl(210 22% 62%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter Tight', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  }
+}
+
+/* Ring animations for push-to-talk */
+@keyframes ringDash {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -120; }
+}
+
+@keyframes ringBreathe {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.9; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  @keyframes ringDash {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: 0; }
+  }
+  @keyframes ringBreathe {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 0.7; }
+  }
+}
+
+/* Tabular numbers for metrics */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit;
+    border-bottom-width: inherit;
+    border-left-style: inherit;
+    border-right-style: inherit;
+    border-top-style: inherit;
+    border-bottom-style: inherit;
+    border-left-color: inherit;
+    border-right-color: inherit;
+    border-top-color: inherit;
+    border-bottom-color: inherit;
+  }
+}
