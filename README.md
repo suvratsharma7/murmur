@@ -4,6 +4,8 @@ I built this for the Jarvis Labs hiring assessment. The idea was simple: instead
 
 The project runs Qwen2.5-7B-Instruct on a single NVIDIA L4 (24 GB), with faster whisper for STT and Kokoro-82M for TTS, all co-located on the same GPU. The benchmark harness sweeps concurrency from 1 to 32 and measures TTFT, TPOT, throughput, and a metric I haven't seen published elsewhere, TTFB audio (time to first audible byte), which captures the actual delay from when you stop speaking to when you start hearing a response. Because at the end of the day, that's the number the user feels.
 
+> **[Watch the demo →](https://www.loom.com/share/86f86094b3254e9cae94bf82c9626fb6)**
+
 ## Features
 
 🎙️ **Push-to-Talk Voice Interface** - WebSocket-based real-time audio streaming with AudioWorklet capture (PCM16 @ 16kHz)
