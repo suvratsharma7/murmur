@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "runtime": "ollama",
+    "dataset": "voice_turns",
+    "timestamp": "2026-05-27T21:14:09.171162+00:00",
+    "concurrency_levels": [
+      1,
+      4,
+      8,
+      16,
+      32
+    ]
+  },
+  "results": [
+    {
+      "concurrency": 1,
+      "error": "All requests failed",
+      "successful_requests": 0
+    },
+    {
+      "concurrency": 4,
+      "error": "All requests failed",
+      "successful_requests": 0
+    },
+    {
+      "concurrency": 8,
+      "error": "All requests failed",
+      "successful_requests": 0
+    },
+    {
+      "concurrency": 16,
+      "error": "All requests failed",
+      "successful_requests": 0
+    },
+    {
+      "concurrency": 32,
+      "error": "All requests failed",
+      "successful_requests": 0
+    }
+  ]
+}
